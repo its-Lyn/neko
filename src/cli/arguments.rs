@@ -3,7 +3,7 @@ use clap::{arg, Arg, ArgAction, Command};
 pub fn make_arguments() -> Command {
     Command::new("neko")
         .about("Simple pacman wrapper.")
-        .version("0.1.0")
+        .version("1.0.0")
         .arg_required_else_help(true)
         .disable_version_flag(true)
         // Arguments

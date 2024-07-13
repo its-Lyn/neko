@@ -5,4 +5,4 @@ if [ "$1" == "--remove" ]; then
     exit 0
 fi
 
-sudo mv -v ./neko /usr/local/bin
+sudo cp -v ./neko /usr/local/bin
