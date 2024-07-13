@@ -1,5 +1,7 @@
 target/
 
+github/releases
+
 .vscode/
 .idea/
 .vs/
