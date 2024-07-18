@@ -12,22 +12,6 @@ Once there, you can click the latest release and download it. <br>
 
 Now, extract it using your favourite file manager and run `setup.sh`. This will put the binary in `/usr/local/bin` and will be runnable from anywhere in your system!
 
-### Installing with Nix
-> [!TIP]
-> While you may be able to use this package outside of an Arch-based distribution,
-> be cautious that you _will_ break your system if you install packages by doing this.
-
-If you are using Nix flakes, you can install neko with the command below:
-```shell
-nix profile install github:its-Lyn/neko#
-```
-Vóila! You have installed `neko`!
-
-Of course, if you only want to try neko, you can use this command.
-```shell
-nix shell github:its-Lyn/neko#
-```
-
 ### Compiling yourself (Advanced)
 #### Prerequisities
 Neko is a really small rust application. To install neko you will need both git and rust installed.
@@ -58,6 +42,22 @@ cd ./target/release
 
 # This will clean the build folders
 cargo clean
+```
+
+### Installing with Nix (Experimental)
+> [!TIP]
+> While you may be able to use this package outside of an Arch-based distribution,
+> be cautious that you _will_ break your system if you install packages by doing this.
+
+If you are using Nix flakes, you can install neko with the command below:
+```shell
+nix profile install github:its-Lyn/neko#
+```
+Vóila! You have installed `neko`!
+
+Of course, if you only want to try neko, you can use this command.
+```shell
+nix shell github:its-Lyn/neko#
 ```
 
 ### Removal
