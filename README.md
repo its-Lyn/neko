@@ -1,8 +1,6 @@
 <h1 align="center">Neko</h1>
-<p align="center" markdown="1">
-    The easy to use pacman wrapper.
-    <img src="./github/showcase.png">
-</p>
+<p align="center">The easy to use pacman wrapper.</p>
+<p align="center"><img src="./github/showcase.png"></p>
 
 <h2 align="center">Installation</h2>
 
@@ -71,4 +69,4 @@ The scripts that come with neko both handle it!
 ```
 
 <h2 align="center">License</h2>
-MIT
+<p align="center">MIT</p>
