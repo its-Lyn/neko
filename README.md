@@ -13,7 +13,7 @@ Once there, you can click the latest release and download it. <br>
 Now, extract it using your favourite file manager and run `setup.sh`. This will put the binary in `/usr/local/bin` and will be runnable from anywhere in your system!
 
 ### Installing with Nix
-> ![TIP]
+> [!TIP]
 > While you may be able to use this package outside of an Arch-based distribution,
 > be cautious that you _will_ break your system if you install packages by doing this.
 
