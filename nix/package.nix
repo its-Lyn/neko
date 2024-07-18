@@ -1,11 +1,16 @@
-{ rustPlatform, lib, pacman, sudo }:
+{ rustPlatform
+, lib
+, pacman
+, makeWrapper }:
 rustPlatform.buildRustPackage {
   pname = "neko";
   version = "0.1.0";
   src = ../.;
   cargoLock.lockFile = ../Cargo.lock;
-  buildInputs = [
-    sudo
-    pacman
-  ];
+  nativeBuildInputs = [ makeWrapper ];
+
+  postInstall = ''
+    wrapProgram $out/bin/neko \
+      --prefix PATH : ${lib.makeBinPath [ pacman ]}
+  '';
 }
