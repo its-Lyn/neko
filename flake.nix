@@ -2,7 +2,7 @@
   description = "neko";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     parts.url = "github:hercules-ci/flake-parts";
     rust.url = "github:oxalica/rust-overlay";
   };
